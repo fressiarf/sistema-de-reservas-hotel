@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Azul | Reservas</title>
+    <!-- Incluyendo iconos (FontAwesome) para la UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/home.css">
+    <style>
+        /* Ajuste para que la navbar se vea bien en una página sin imagen hero */
+        .navbar { background: rgba(0, 75, 107, 0.95); position: relative; padding: 15px 5%; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .page-header { text-align: center; padding: 60px 20px 20px; }
+        .page-header h1 { color: var(--primary-color); font-size: 2.5rem; margin-bottom: 10px; }
+        .page-header p { color: #666; font-size: 1.1rem; }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="/">Hotel Azul</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/pages/reservas.html">Habitaciones</a></li>
+            <li><a href="/#comodidades">Comodidades</a></li>
+            <li><a href="/pages/InicioSesion.html" class="btn-book">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Habitaciones Disponibles</h1>
+        <p>Seleccione la habitación perfecta para su estancia oceánica.</p>
+    </div>
+
+    <!-- Sección Habitaciones Movida desde el Home -->
+    <section id="habitaciones" class="rooms" style="padding-top: 40px;">
+        <div class="rooms-grid">
+            
+            <!-- Tarjeta Habitación 1 -->
+            <div class="room-card is-visible">
+                <div class="room-img">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop" alt="Standard Ocean View">
+                </div>
+                <div class="room-info">
+                    <h3>Standard Ocean View</h3>
+                    <ul class="room-features">
+                        <li><i class="fa-solid fa-bed"></i> 1 Cama King</li>
+                        <li><i class="fa-solid fa-water"></i> Vista al Océano</li>
+                    </ul>
+                    <p>Diseñada para que descanses profundamente escuchando el suave romper de las olas desde tu balcón.</p>
+                    <a href="#" class="btn-secondary">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Habitación 2 -->
+            <div class="room-card is-visible">
+                <div class="room-img">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=1000&auto=format&fit=crop" alt="Suite Mar Abierto">
+                </div>
+                <div class="room-info">
+                    <h3>Suite Mar Abierto</h3>
+                    <ul class="room-features">
+                        <li><i class="fa-solid fa-bed"></i> 1 Cama King, 1 Sofá</li>
+                        <li><i class="fa-solid fa-umbrella-beach"></i> Salida a la Playa</li>
+                    </ul>
+                    <p>Espacios amplios y frescos, con una terraza privada de arena que te conecta directamente con el mar.</p>
+                    <a href="#" class="btn-secondary">Reservar Ahora</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="margin: 0 auto; text-align: center;">
+                <h4>Hotel Azul</h4>
+                <ul style="display: flex; gap: 20px; justify-content: center; padding: 0;">
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Costa Pacífico</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> +506 8888-0000</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> reservas@hotelazul.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hotel Azul. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Tu script de reservas (si lo tienes) -->
+    <script src="../src/js/reservas.js"></script>
+</body>
+</html>

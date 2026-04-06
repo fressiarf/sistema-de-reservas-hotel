@@ -1,0 +1,16 @@
+node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Base de datos local (Opcional, si no quieres guardar los datos de prueba en el repo)
+# db.json
+
+# Archivos de entorno
+.env
+.env.local
+
+# Archivos de sistema operativo (opcional)
+.DS_Store
+Thumbs.db
