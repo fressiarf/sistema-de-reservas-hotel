@@ -5,42 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Azul | Escape a la Naturaleza y Lujo</title>
-    <!-- Incluyendo iconos (FontAwesome) para la UI -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../src/css/home.css">
 </head>
 
 <body>
-    <!-- Barra de Navegación -->
     <nav class="navbar" id="navbar">
         <div class="logo">
             <a href="/">Hotel Azul</a>
         </div>
         <ul class="nav-links">
             <li><a href="/">Inicio</a></li>
-            <li><a href="/pages/reservas.html">Habitaciones y Reservas</a></li>
             <li><a href="/#comodidades">Comodidades</a></li>
-            <li><a href="/pages/InicioSesion.html" class="btn-book">Iniciar Sesión</a></li>
+
         </ul>
     </nav>
 
-    <!-- Sección Hero Header Parallax -->
     <header class="hero">
         <h1>Escape al Sonido del Mar</h1>
         <p>Un paraíso de lujo en la costa. Diseñado para que la brisa oceánica y el confort se unan en momentos inolvidables.</p>
         <a href="/pages/reservas.html" class="btn-primary">Descubra Nuestro Paraíso Marino</a>
     </header>
 
-    <!-- Sección de Bienvenida -->
     <section class="welcome fade-in-section">
         <h2>Bienvenido a Hotel Azul</h2>
         <p>
             Si busca sumergirse en la relajación absoluta o en emocionantes actividades acuáticas, estamos idealmente frente al mar pacífico. Desde relajarse en nuestra piscina infinita con borde infinito fundiéndose en el océano, disfrutar de exquisitos mariscos o caminar por las arenas blancas, Hotel Azul es su destino definitivo.
         </p>
     </section>
-
-
-    <!-- Sección Comodidades y Actividades -->
     <section id="comodidades" class="amenities-details">
         <h2 class="section-title fade-in-section" style="color: #fff;">Comodidades Exclusivas</h2>
         <div class="amenities-grid">
@@ -71,7 +63,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
@@ -104,38 +95,6 @@
         </div>
     </footer>
 
-    <!-- Script para animaciones simples -->
-    <script>
-        // Navbar cambio de fondo al hacer scroll
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Animaciones de aparición al hacer scroll (Intersection Observer)
-        const faders = document.querySelectorAll('.fade-in-section');
-        const appearOptions = {
-            threshold: 0.15,
-            rootMargin: "0px 0px -50px 0px"
-        };
-        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                } else {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, appearOptions);
-
-        faders.forEach(fader => {
-            appearOnScroll.observe(fader);
-        });
-    </script>
+    <script src="../src/js/home.js"></script>
 </body>
 </html>
