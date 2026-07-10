@@ -128,11 +128,3 @@ Persistido en `localStorage["reservas"]`.
 | SweetAlert2          | Modales de confirmación y cancelación             |
 | Font Awesome 6       | Iconografía en comodidades, footer y tarjetas     |
 | IntersectionObserver | Animaciones fade-in al hacer scroll               |
-
----
-
-## Contacto (datos del hotel de demostración)
-
-- 📍 Costa Pacífico, San José, Costa Rica
-- 📞 +506 8888-0000
-- ✉️ info@hotelazul.com
